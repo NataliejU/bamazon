@@ -15,14 +15,14 @@ CREATE TABLE products (
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES 
 	("Harry Potter T-Shirt", "Apparel", 12.95, 40), 
     ("Stainless Steel Toaster", "Home & Kitchen", 39.99, 200), 
-    ("Doctor Who T.A.R.D.I.S. Coffee Mug", "Home & Kitchen", 9.25, 350),
-    ("Day of the Dead Leggings", "Apparel", 19.90, 400), 
+    ("Bride to Be Coffee Mug", "Home & Kitchen", 9.25, 350),
+    ("Stripe Leggings", "Apparel", 19.90, 400), 
     ("Organic Matcha Green Tea Powder", "Grocery", 21.05, 1000),
-    ("Monster House DVD", "Entertainment", 24.99, 2500),
-    ("Graveyard Halloween Decoration Set", "Seasonal", 18.49, 456),
-    ("Sweeney Todd Soundtrack CD", "Entertainment", 12.95, 752),
-    ("Limited Edition 4th Doctor Scarf", "Apparel", 15.57, 8),
-    ("Inflatable 6ft Spider", "Seasonal", 18.83, 204);
+    ("Matrix DVD", "Entertainment", 24.99, 2500),
+    ("Christmas Decoration Set", "Seasonal", 18.49, 456),
+    ("Avatar the Last Airbender Soundtrack CD", "Entertainment", 12.95, 752),
+    ("Limited Edition Patriots Scarf", "Apparel", 15.57, 8),
+    ("Inflatable Santa Claus", "Seasonal", 18.83, 204);
     
     SELECT * FROM products;
     
