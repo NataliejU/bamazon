@@ -6,7 +6,7 @@ var inquirer = require('inquirer');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'Bacardi13',
+  password : 'biology123',
   database : 'bamazon'
 });
 
@@ -58,7 +58,6 @@ function viewProducts() {
         results[i].stock_quantity
       );
     }
-    console.log("\n--------------\n");
     menu();
   })
 };
@@ -78,8 +77,7 @@ function viewLow() {
         results[i].stock_quantity + "]"
       );
     }
-    console.log("\n--------------\n");
-    menu();
+   menu();
   })
 };
 
@@ -97,7 +95,6 @@ function addInventory() {
     var sql = "UPDATE `products` SET `stock_quantity` = `stock_quantity` + " + answer.addQty + " WHERE `item_id` = " + answer.itemId;
     connection.query(sql, function(err, result, fields) {
       console.log("\n" + result.affectedRows + " product updated!");
-      console.log("\n--------------\n");
       menu();
     })
   })
@@ -128,7 +125,6 @@ function addProduct() {
     var values = "('" + answer.name + "', '" + answer.dept + "', " + answer.price + ", " + answer.qty + ")";
     connection.query(sql + values, function(err, result, fields) {
       console.log("\n" + result.affectedRows + " product added!");
-      console.log("\n--------------\n");
       menu();    
     })
   })
